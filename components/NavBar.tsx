@@ -1,3 +1,4 @@
+import { FC, PropsWithChildren } from 'react';
 import { ActiveLink } from './ActiveLink';
 import styles from "./NavBar.module.css";
 
@@ -20,7 +21,7 @@ const menuItems = [
   },
 ];
 
-export const NavBar = () => {
+export const NavBar:FC<PropsWithChildren> = () => {
 
   return (
     <nav className={styles['nav-container']}>
